@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giphy</title>
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- This links to the jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron" style="color:white; background-color:blueviolet">
+        <h1 style="text-align:center">Animals Search</h1>
+    </div>
+
+<!-- form to add search and submit button-->
+<form>
+  <div class="form-group" style="text-align:center">
+    <label for="animalInput">Add and animal</label>
+    <input type="text" id="animalInput">
+    <input id="Submitbtn" type="submit" value="submit">
+  </div>
+</form>
+
+<!-- Button triggers show to be added -->  
+<div class="row">
+  <div class="container">
+    <button class="btn btn-primary" data-search="Horse" id="show">Horse</button>
+    <button class="btn btn-primary" data-search="Dogs" id="show">Dogs</button>
+    <button class="btn btn-primary" data-search="Cats" id="show">Cats</button>
+    <button class="btn btn-primary" data-search="Pig" id="show">Pig</button>
+ <div id="btn" style="display: inline-block"></div>
+</div> 
+</div> 
+
+<div class="row">
+  <div class="container">
+      <span><div id="giphy"></div></span>
+  </div> 
+</div> 
+
+
+<script type="text/javascript" src="javascript.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
